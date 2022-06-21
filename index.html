@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Beautiful Nature Photos Website Project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <style>
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5 {
+                font-family: "Raleway", sans-serif
+            }
+
+            .w3-third img {
+                margin-bottom: -6px;
+                opacity: 0.8;
+                cursor: pointer
+            }
+
+            .w3-third img:hover {
+                opacity: 1
+            }
+        </style>
+    </head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+        <h3 class="w3-padding-64 w3-center"><b>BEAUTIFUL<br>NATURE PHOTOS</b></h3>
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+        <span class="w3-left w3-padding">BEAUTIFUL NATURE PHOTOS</span>
+        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <!-- Photo grid -->
+        <div class="w3-row">
+            <div class="w3-third">
+                <img src="https://scontent-msp1-1.xx.fbcdn.net/v/t39.30808-6/275783046_4679576785504767_4086877218365662615_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=jhLzSi37uL4AX-WW6W9&_nc_ht=scontent-msp1-1.xx&oh=00_AT9AliJbq8gRNHgBd6qcXse2Y21_rx0z8ULSr2Ev_QnDow&oe=62B67C13" style="width:100%" onclick="onClick(this)"
+                    alt="Black Sand Beach  Silver Bay, Minnesota">
+                <img src="https://scontent-msp1-1.xx.fbcdn.net/v/t39.30808-6/275402971_4679577685504677_4080912297547636396_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=1ZS2EpEdImUAX8k6NvL&_nc_ht=scontent-msp1-1.xx&oh=00_AT-t83EcH_lxvr4nFw3jxVbj8OJvsOgxs-9VhLzXtVwsUA&oe=62B623AB" style="width:100%" onclick="onClick(this)"
+                    alt="Lake Superior & Black Sand Beach">
+                <img src="https://scontent-msp1-1.xx.fbcdn.net/v/t39.30808-6/275559083_4679577422171370_9098835056241538944_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=GCiKkyHFk08AX-feIU2&_nc_ht=scontent-msp1-1.xx&oh=00_AT9KVGX2nKru8pOEH7tlwiAkDn0px2i1G5qPX3eO0-wfhQ&oe=62B617E2" style="width:100%" onclick="onClick(this)" 
+                alt="Walking Trail at Gooseberry Falls, Two Harbors Minnesota">
+            </div>
+
+            <div class="w3-third">
+                <img src="https://scontent-msp1-1.xx.fbcdn.net/v/t39.30808-6/275850060_4679576522171460_6262473209097597758_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Sw-O1XRAKvUAX-ErdSr&tn=HK8PsobfwwBa56Gf&_nc_ht=scontent-msp1-1.xx&oh=00_AT-wrfC6IsloymlesRNB-heL3ZH4IUTweA4vDcbnAWR3OA&oe=62B57B77" style="width:100%" onclick="onClick(this)"
+                    alt="Lake Superior Duluth, Minnesota">
+                <img src="https://scontent-msp1-1.xx.fbcdn.net/v/t39.30808-6/275760528_4679576442171468_5902631939550656818_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=VQTxdlt3sdMAX9EQdtt&tn=HK8PsobfwwBa56Gf&_nc_ht=scontent-msp1-1.xx&oh=00_AT-q6nhuVWOPhFDly_Vp-6Pl1Qbh6us0gh6KZuO6p9JB3A&oe=62B706A2" style="width:100%" onclick="onClick(this)"
+                    alt="Picture Rocks National Park, Munising Michigan">
+                <img src="https://scontent-msp1-1.xx.fbcdn.net/v/t39.30808-6/265073246_4354606931335089_7593949170687674500_n.png?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=FWVxHNOwwTgAX-w4py3&tn=HK8PsobfwwBa56Gf&_nc_ht=scontent-msp1-1.xx&oh=00_AT9J0ZilAMSj6Bmm4QPQLQdPckO-Wr7B_GMGV3vTzTMJaw&oe=62B6D868" style="width:100%" onclick="onClick(this)"
+                    alt="Lake Superior Lighthouse, Munising Michigan">
+            </div>
+
+            <div class="w3-third">
+                <img src="https://scontent-msp1-1.xx.fbcdn.net/v/t39.30808-6/245096623_4170759759719808_5378185513412434388_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=GklZd7UNU7sAX8jx5Kk&tn=HK8PsobfwwBa56Gf&_nc_ht=scontent-msp1-1.xx&oh=00_AT8ikoLGG3ZPktDhBs7iW15UrofcezPu9smgUoFbZeMRvQ&oe=62B60DE9" style="width:100%" onclick="onClick(this)" 
+                alt="Gooseberry Falls Two Harbors, Minnesota">
+                <img src="https://scontent-msp1-1.xx.fbcdn.net/v/t1.6435-9/202606368_3840525006076620_2014283135885866491_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=26rUVVIs5mAAX-TMN-P&_nc_ht=scontent-msp1-1.xx&oh=00_AT9mkAu2Nbq8zJ-1etVnCCS8qqFLh8jtM5admORPohqz6A&oe=62D751C2" style="width:100%" onclick="onClick(this)" 
+                alt="Rock Formations, Lake Supeior">
+                <img src="https://scontent-msp1-1.xx.fbcdn.net/v/t1.6435-9/127580285_3301497726646020_3741992907988855694_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=e3f864&_nc_ohc=2LjtxDZ9gZ0AX8LRR3m&_nc_oc=AQlvacDbDOswL9Wv70KdKea5EOEghoFIsZZd_BEj_fYyzJvGA3__ju3S9PN_Bt3AAsfKAd7x_-uJeHle75M0A6j3&_nc_ht=scontent-msp1-1.xx&oh=00_AT-OY1jWdeLg6Nthq23Fn5d_kJPjMcS_jWtz14S8KE3fOg&oe=62D6F64F" style="width:100%" onclick="onClick(this)" 
+                alt="Wave Action Shot (Lake Superior)">
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+            </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+        <!-- About section -->
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+            <h4><b>About Me</b></h4>
+            <img src="https://scontent-msp1-1.xx.fbcdn.net/v/t1.6435-9/119866320_3611215685564313_4076575488235438410_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=2G-mxazwI-EAX_IZu04&_nc_ht=scontent-msp1-1.xx&oh=00_AT__uLNRgK97KHPZqjUnBC3DSBE5zFklQGAxK3BPhMF_Kw&oe=62D4E1AF" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>My Name is Kayla</h4>
+                <p> I am 31 years old, have two beautiful children. Born and raised in Minnesota. We love 
+                    going hiking, camping, swimming, boating, fishing, ice fishing and many more. 
+                    While out with the family I started taking photos of the beautiful nature that 
+                    surrounded us. The picutres have actually turned out great. So, I decided to share 
+                    them with others that enjoy the beauty of nature as much as I do.
+                </p>
+
+
+        <!-- End page content -->
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+    </script>
+
+
+</body>
+
+</html>
